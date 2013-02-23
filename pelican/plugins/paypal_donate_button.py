@@ -41,7 +41,7 @@ import textwrap
             returns PayPal's html snippet
         """
 
-        return FORM_HTML.format(self.pkcs7)
+        return self.FORM_HTML.format(self.pkcs7)
 
 
 def get_paypal_donate_button(gen, metadata):
