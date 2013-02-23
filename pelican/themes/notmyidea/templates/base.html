@@ -38,6 +38,7 @@
                 {% endif %}
                 {% for cat, null in categories %}
                     <li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+                    <li style="padding-top: 7px; float: right;">{{ paypal_donate_button }}</li>
                 {% endfor %}
                 </ul></nav>
         </header><!-- /#banner -->
