@@ -51,7 +51,7 @@ def get_paypal_donate_button(gen, metadata):
     """
 
     if 'PAYPAL_PKCS7' in gen.settings.keys():
-        metadata['paypal_donate_button'] = gen.plugin_instance.get_paypal()
+        gen.context['paypal_donate_button'] = gen.plugin_instance.get_paypal()
 
 
 def paypal_donate_button_initialization(generator):
